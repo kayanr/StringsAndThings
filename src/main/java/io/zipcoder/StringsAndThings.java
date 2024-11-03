@@ -16,12 +16,9 @@ public class StringsAndThings {
      */
     public Integer countYZ(String input){
         int count = 0;
-
         String[] words = input.split(" ");
         for (String word : words) {
-            //System.out.println("The words are: " + words[i].charAt(words[i].length() - 1));
             if ((word.charAt(word.length() - 1) == 'y') || (word.charAt(word.length() - 1) == 'z')) {
-
                 count = count + 1;
             }
         }
